@@ -1,0 +1,265 @@
+llave:clave
+bool
+String
+var
+num
+Map
+List
+int
+double
+
+//  /**/
+
+tipado = strings bool map list int double designa las variables
+class = designa los objetos text lenght 
+objeto = lo que va dentro de una funcion ya sea texto variables numeros listas etc
+funciones = print, main {void main}, 
+
+
+clase 9
+void main() {
+  String yeyo = 'Dan\'iel';
+  print('pa la pinga $yeyo');
+//   se puede usar \ para usar un caracter como ' dentro de un string
+ print(yeyo[0]);
+  print(yeyo[yeyo.length -1]);
+  print(yeyo.substring[0, 4]);
+}
+ 
+clase 10
+void main() {
+  bool estadoMotor = true;
+  
+  if(estadoMotor==true){
+    print('El motor esta activo putito');
+  }else{
+    print('El motor esta apagado pendejo');
+  }
+  
+  print('El estado del motor es ${!estadoMotor}');
+  estadoMotor= !estadoMotor;
+  if(estadoMotor){
+    print('El motor esta activo putito');
+  }else{
+    print('El motor esta apagado pendejo');
+  }
+}
+ 
+clase 11
+void main() {
+  
+  String nombre = 'Daniel';
+  String apellido = 'Moreno';
+  String segundoNombre = 'Dario';
+  String segundoApellido = 'Aleman';
+  
+   List numeros = [1,2,3,4,5];
+  print(numeros);
+  numeros.add(6);
+  print(numeros);
+  numeros.add('Hola mundo');
+//   se puede agregar string porque es tipo dynamic
+  print(numeros);
+  
+  List<int> numeros2 = [2,3,4,5,6];
+  print(numeros2);
+  numeros2.add(4);
+  print(numeros2);
+  
+//   tamano fijo
+  List<int> numeros3 = List(10);
+  print(numeros3);
+  numeros3[3] = 12;
+//   []es la posicion
+  print(numeros3);
+  
+  List <List<int>> listanumeros4 = [numeros2, numeros3];
+//   para hacer una lista de listas
+  
+  List<String> numeros5 = [nombre,apellido,segundoNombre,segundoApellido];
+  print(numeros5);
+  print(listanumeros4);
+  }
+
+clase 12
+void main() {
+ 
+  Map<String, dynamic> persona = {
+    'nombre' : 'Jose',
+    'edad' : 17,
+    'soltero' : true
+//       son pares llaves:clave
+  };
+  
+  String hola = 'nombre';
+  
+  String estado = persona['soltero'] == true ? 'Felizmente Soltero' : 'Amarrado';
+//   if simplificado
+  print(persona);
+  print(estado);
+  print(persona[hola]);
+  
+  Map<int, String> personas = {
+    
+    1: 'Daniel',
+    2: 'Jose',
+    3: 'Alberto Mamerto',
+    8: 'Rosalia'
+    
+  };
+  
+  personas.addAll( {10: 'perro'} );
+  print(personas[10]);
+  print(persona['edad']);
+
+clase 13
+
+void main() {
+ var mensaje = saludar();
+  String mensaje1 = saludar1('Hola,' ,'Daniel' , 'Moreno');
+  print(mensaje);
+  print(mensaje1);
+  String mensaje2 = saludar2(texto:'Hola,' ,nombre:'Daniel' , apellido:'Moreno');
+  print(mensaje2);
+  
+}
+
+String saludar(){
+//   print('hola');
+  return'hola';
+  
+}
+
+String saludar1(String texto, String nombre, String apellido){
+  print('Hola');
+  return'$texto $nombre $apellido';
+  
+}
+
+String saludar2({String texto, String nombre, String apellido}) => '$texto $nombre $apellido';
+//  => significa return es una funcion de flecha
+
+clase 14
+
+void main() {
+  
+//   esto es una instancia
+  /*Persona danyelpty = new Persona('Daniel', 17, true);*/
+  final danyelpty = new Persona(nombre: 'Daniel', edad: 17);
+//   se puede usar var o final tambien
+  print(danyelpty.edad);
+//   para imprimir el to string aunq e lo mismo
+  print(danyelpty.toString());
+  
+  
+}
+  
+class Persona{
+  
+  String nombre;
+  int edad;
+  bool sexo;
+  
+//   el constructor es para poder asignarles datos a las propiedades de la clases
+//   argumento es lo que va dentro del constructor
+  /*Persona(String nombre, int edad, bool sexo){
+    this.nombre = nombre;
+    this.edad = edad;
+    this.sexo = sexo;
+    }*/
+//   con este dejan de ser argumentos posicionales y pasan a ser nominales o name arguments
+  Persona({String nombre, int edad, bool sexo = true}){
+    this.nombre = nombre;
+    this.edad = edad;
+    this.sexo = sexo;
+    }
+//   tambien le puedo poner un argumento como predeterminaado
+  
+  /*Persona({this.nombre, this.edad, this.sexo});*/
+//   este es el return para que en ves de instance of Persona salgan sus propiedasdes
+  /*String toString(){
+    return '${this.nombre} ${this.edad} ${this.sexo}';
+  }*/
+  String toString(){
+    return 'nombre :${this.nombre} edad:${this.edad} sexo:${this.sexo}';
+  }
+    
+    
+  }
+
+clase 15
+void main() {
+  
+//   esto es una instancia
+  /*Persona danyelpty = new Persona('Daniel', 17, true);*/
+  final danyelpty = new Persona(nombre: 'Daniel', edad: 17);
+//   se puede usar var o final tambien
+  print(danyelpty.edad);
+//   para imprimir el to string aunq e lo mismo
+  print(danyelpty.toString());
+  
+  
+}
+  
+class Persona{
+  
+  String nombre;
+  int edad;
+  bool sexo;
+  
+//   el constructor es para poder asignarles datos a las propiedades de la clases
+//   argumento es lo que va dentro del constructor
+  /*Persona(String nombre, int edad, bool sexo){
+    this.nombre = nombre;
+    this.edad = edad;
+    this.sexo = sexo;
+    }*/
+//   con este dejan de ser argumentos posicionales y pasan a ser nominales o name arguments
+//   Persona({String nombre, int edad, bool sexo = true}){
+//     this.nombre = nombre;
+//     this.edad = edad;
+//     this.sexo = sexo;
+//     }
+//   tambien le puedo poner un argumento como predeterminaado
+
+//   este es el return para que en ves de instance of Persona salgan sus propiedasdes
+  /*String toString(){
+    return '${this.nombre} ${this.edad} ${this.sexo}';
+  }*/
+    Persona({this.nombre, this.edad, this.sexo = true});
+//   String toString(){
+//     return '$nombre $edad $sexo';
+//   }
+//   cuando tenemos las propiedades definida con el constructor no hace falta poner el this. ni las llaves 
+//   el return se puede reemplazar con la flecha
+  String toString() => '$nombre $edad $sexo';
+  
+    
+    
+  }
+
+void main() {
+  final danyelpty = new Persona(nombre: 'Daniel', edad: 17);
+  print(danyelpty.edad);
+  print(danyelpty.toString());
+  
+}
+
+class Persona{
+  
+  String nombre;
+  int edad;
+  bool sexo;
+  
+  Persona({this.nombre, this.edad, this.sexo = true});
+  
+  String toString() => '$nombre $edad $sexo';
+  
+}
+
+clase 16
+
+
+
+
+

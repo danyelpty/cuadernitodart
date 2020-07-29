@@ -1,0 +1,184 @@
+https://dart.dev/#try-dart
+1
+main() {
+  String nombre = 'Daniel ';
+  String apellido = 'Moreno';
+  num edad = 17;
+  final double pi = 3.14;
+  print(nombre + apellido);
+  print(edad);
+  print(pi);
+}
+
+2
+main() {
+  String bienvenido =('Bienvenido a Dart');
+  var hola = 'Daniel ' + 'Moreno';
+  bool f = true;
+  print(bienvenido.substring(0, 11));
+  print ('$hola $bienvenido Bro');
+  print (f);
+}
+
+3
+main() {
+  num numero1 = 12;
+  int numero2 = 13;
+  print(numero2% 2);
+  print(numero2% 2 == 0);
+  //Es para saber si es par o impar
+}
+
+hasta aqui primera parte dia uno de 5 videos
+
+1
+main() {
+  int numero1 = 12;
+  num vergas = 24;
+  print(numero1>vergas);
+  print(numero1%2 == 0);
+  print(numero1%2 != 0);
+}
+
+2
+main() {
+  num bienVergas = 14;
+  int putito = 2;
+  num php = 848738;
+  if(bienVergas + php% putito == 0){
+    print('El resultado de $bienVergas+$php es par');
+  }else{
+  print('El resultado de $bienVergas+$php es impar');
+  }
+  
+  String resultado = bienVergas + php% putito == 0 ? 'par' : 'impar';
+    
+  print('El resultado de $bienVergas+$php es $resultado');
+}
+mini programa incompleto
+
+main() {
+ num numero1 = 12;
+ int numero2 = 16;
+  String quees = 'par';
+  num quesopa = 12+33;
+  final determinante = 2;
+    print('-Que suma quiere preguntar maestro?');
+  //Linea de codigo a ingresar numeros numero1 y numero2
+  print('-Estudiante, la suma de $numero1+$numero2 es par o es impar?');
+  print('-El estudiante puso que es $quees');
+   //print('La operacion $quesopa es par o es impar?');
+  //linea de codigo a ingresar respuesta quees
+  String resultado = numero1+numero2% determinante == 0 ? 'par' : 'impar';
+  //String resultado = quesopa% determinante == 0 ? 'par' : 'impar';
+  
+  if(quees == resultado){
+  print('Tu respuesta es correcta');
+  }
+  else{
+  print('Tu respuesta es incorrecta');
+  }
+  
+}
+
+3
+num bienVergas = 14;
+  int putito = 2;
+  num php = 848738;
+  if(bienVergas + php% putito == 0){
+    print('El resultado de $bienVergas+$php es par');
+  }else{
+  print('El resultado de $bienVergas+$php es impar');
+  }
+  
+  String resultado = bienVergas + php% putito == 0 ? 'par' : 'impar';
+    
+  print('El resultado de $bienVergas+$php es $resultado');
+  
+  switch(resultado){
+
+mini programa incompletopara probar funcion opciones switch
+main() {
+  String tipo = 'perro';
+   num numero1 = 12;
+ int numero2 = 9;
+  String quees = 'impar';
+  final determinante = 2;
+  print('Que operacion tipo de operacion matematica quieres preguntar?');
+  print('Opcion a) suma, b) resta, c) multiplicacion');
+  //Se llena la variable tipo
+  
+ print('*El prof selecciono la opcion ($tipo)');
+  
+  switch(tipo){
+    case 'a':
+    print('-Que suma quiere preguntar maestro?');
+  //Linea de codigo a ingresar numeros numero1 y numero2
+  print('-Estudiante, la suma de $numero1+$numero2 es par o es impar?');
+  print('*El estudiante puso que es $quees');
+  //linea de codigo a ingresar respuesta quees
+  String resultado = numero1+numero2% determinante == 0 ? 'par' : 'impar';
+  
+  if(quees == resultado){
+  print('Tu respuesta es correcta');
+  }
+  else{
+  print('Tu respuesta es incorrecta');
+  }
+      break;
+      
+    case 'b':
+    print('-Que resta quiere preguntar maestro?');
+  //Linea de codigo a ingresar numeros numero1 y numero2
+  print('-Estudiante, la resta de $numero1-$numero2 es par o es impar?');
+  print('-El estudiante puso que es $quees');
+  //linea de codigo a ingresar respuesta quees
+  String resultado = numero1-numero2% determinante == 0 ? 'par' : 'impar';
+  
+  if(quees == resultado){
+  print('Tu respuesta es correcta');
+  }
+  else{
+  print('Tu respuesta es incorrecta');
+  }
+      break;
+      
+    case 'c':
+    print('-Que multiplicacion quiere preguntar maestro?');
+  //Linea de codigo a ingresar numeros numero1 y numero2
+  print('-Estudiante, la multiplicacion de $numero1*$numero2 es par o es impar?');
+  print('-El estudiante puso que es $quees');
+  //linea de codigo a ingresar respuesta quees
+  String resultado = numero1*numero2% determinante == 0 ? 'par' : 'impar';
+  
+  if(quees == resultado){
+  print('Tu respuesta es correcta');
+  }
+  else{
+  print('Tu respuesta es incorrecta');
+  }
+      break;
+    default:
+      throw('Vayase pa la VERGA');
+      //se puede usar print pero throw es lanza error excepcion
+      break;
+  }
+}
+
+4
+main() {
+  for(var i=0; i<=29; i++){
+    if(i%2!=0){
+  print('Numero de iteracion $i');
+    }
+  }
+}
+
+5
+
+
+
+
+
+
+

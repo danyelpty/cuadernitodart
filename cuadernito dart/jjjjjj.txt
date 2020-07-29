@@ -1,0 +1,64 @@
+Caja
+Caja chica
+Banco
+Cuentas por cobrar
+Provisiones para cuentas incobrables
+Documentos por cobrar
+Materiales de oficina
+Seguros pagados por anticipados
+Alquileres por anticipado
+Inventario de mercancía
+Inventario de  insumos de aseo
+Mobiliario
+Depreciación acumulada de mobiliario
+Equipo de oficina
+Depreciación acumulada de equipo de oficina
+Equipo rodante
+Depreciación de equipo rodante
+Edificio
+Depreciación de equipo rodante
+Terreno
+Impuestos sobre la renta estimada
+Costos de organización 
+Patentes
+Cuentas por pagar proveedores
+Tesoro nacional ITBMS por pagar
+Documentos por pagar
+Préstamo por pagar
+Salarios por pagar
+Impuestos por pagar
+Cuota obrero patronal por pagar
+Hipoteca por pagar
+Préstamo por pagar a largo plazo
+Depósitos recibido
+Capital inicial
+Inversiones
+Retiro personal
+Utilidades retenidas
+Ventas
+Devoluciones en ventas
+Descuentos en  ventas
+Compras
+Devoluciones en compras
+Descuentos en compras
+Salarios
+Alquileres
+Agua
+Luz
+Teléfono
+Materiales de oficina
+Seguro social patronal
+Seguro educativo patronal
+Riesgo profesional 
+Gastos de ITBMS
+Vacaciones
+Gastos XIII mes
+
+
+"bracket-pair-colorizer-2.activeScopeCSS": [
+        
+        "borderStyle : solid",
+        "borderWidth : 1px",
+        "borderColor : {color}",
+        "opacity: 0.5"
+    ]
